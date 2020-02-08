@@ -1,34 +1,19 @@
-<template>
-  <main class="page">
-    <!--    <Filters class="page__aside" />-->
-    <div class="page__content">
-      <ContentCard title="Фильмы">
-        <p>{{ fromVuex }} </p>
-        <content-card title="вложенная карточка">
-          aa
-        </content-card>
-      </ContentCard>
-    </div>
-  </main>
+<template lang="pug">
+  .page
+    the-first-screen
 </template>
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
-import ContentCard from '~/components/ContentCard.vue'
 
-@Component({
+<script>
+import TheFirstScreen from '~/components/TheFirstScreen'
+export default {
   components: {
-    ContentCard
-  }
-})
-export default class Page extends Vue {
-  get fromVuex () {
-    return this.$store.state.peoples.name
+    TheFirstScreen
   }
 }
 </script>
-<style lang="sass" scoped>
+
+<style scoped lang="sass">
 .page
-  color: $bg-color
-  &__content
-    margin: 20px
+  display: flex
+  width: 100vw
 </style>

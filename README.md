@@ -1,6 +1,6 @@
-# swapi
+# imweek-home
 
-> swapi front
+> My sublime Nuxt.js project
 
 ## Build Setup
 
