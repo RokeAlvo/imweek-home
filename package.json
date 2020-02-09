@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@bazzite/nuxt-optimized-images": "^0.3.0",
+    "hooper": "^0.3.4",
     "lazysizes": "^5.2.0",
     "nuxt": "^2.0.0",
     "vue-lazyload": "^1.3.3"

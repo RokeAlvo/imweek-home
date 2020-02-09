@@ -1,30 +1,27 @@
 <template lang="pug">
-    picture()
-        <!--        source(-->
-        <!--          :data-srcSet="img + '.webp'"-->
-        <!--          type="image/webp"-->
-        <!--          )-->
-        source(
-          :data-srcSet="webp375"
-          media="(max-width: 500px)"
-          type="image/webp"
-        )
-        source(
-          :data-srcSet="img375"
-          media="(max-width: 500px)"
-        )
-        source(
-          :data-srcSet="webp"
-          type="image/webp"
-        )
-        source(
-          :data-srcSet="img"
-        )
-        img(
-          class="lazyload"
-          :data-src="img"
-          :src="sqip"
+  .picture
+      picture()
+          source(
+            :data-srcSet="webp375"
+            media="(max-width: 500px)"
+            type="image/webp"
           )
+          source(
+            :data-srcSet="img375"
+            media="(max-width: 500px)"
+          )
+          source(
+            :data-srcSet="webp"
+            type="image/webp"
+          )
+          source(
+            :data-srcSet="img"
+          )
+          img(
+            class="lazyload"
+            :data-src="img"
+            :src="sqip"
+            )
 </template>
 
 <script>
@@ -66,7 +63,13 @@ export default {
 <style scoped lang="sass">
 /*img[lazy='loading']*/
 /*  filter: blur(15px)*/
+picture
+  /*position: relative*/
+  /*max-width: 200px*/
+  /*width: 200px*/
 img
-  min-width: 300px
-  min-height: 300px
+  max-width: 100%
+  width: 100%
+  /*min-width: 100%*/
+  /*min-height: 100%*/
 </style>
