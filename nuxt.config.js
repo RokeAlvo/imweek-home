@@ -1,5 +1,10 @@
+// import * as ImageminWebpWebpackPlugin from 'imagemin-webp-webpack-plugin'
+// eslint-disable-next-line nuxt/no-cjs-in-config
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
+
 export default {
-  mode: 'spa',
+  // mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -27,7 +32,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    // '~/plugins/vue-lazy-load',
+    '~/plugins/vue-lazysizes.client.js'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -38,17 +46,71 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources'],
+  modules: [
+    '@nuxtjs/style-resources'
+    // '@bazzite/nuxt-optimized-images'
+  ],
   styleResources: {
     sass: ['./assets/css/main.sass']
   },
+  // optimizedImages: {
+  //   optimizedImages: {
+  //     inlineImageLimit: 1000,
+  //     imagesName: ({ isDev }) =>
+  //       isDev
+  //         ? '[path][name][hash:optimized].[ext]'
+  //         : 'img/[contenthash:7].[ext]',
+  //     responsiveImagesName: ({ isDev }) =>
+  //       isDev
+  //         ? '[path][name]--[width][hash:optimized].[ext]'
+  //         : 'img/[contenthash:7]-[width].[ext]',
+  //     handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+  //     optimizeImages: true,
+  //     optimizeImagesInDev: true,
+  //     defaultImageLoader: 'img-loader',
+  //     mozjpeg: {
+  //       quality: 80
+  //     },
+  //     optipng: {
+  //       optimizationLevel: 3
+  //     },
+  //     pngquant: false,
+  //     gifsicle: {
+  //       interlaced: true,
+  //       optimizationLevel: 3
+  //     },
+  //     svgo: {
+  //       // enable/disable svgo plugins here
+  //     },
+  //     webp: {
+  //       preset: 'default',
+  //       quality: 75
+  //     },
+  //     sqip: {
+  //       options: {
+  //         numberOfPrimitives: 20
+  //       }
+  //     }
+  //   }
+  // },
   /*
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    extend(config, { isDev, isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    }
+  },
+  generate: {
+    extend(config, { isDev, isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    }
   }
+  // }
 }
