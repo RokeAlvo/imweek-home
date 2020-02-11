@@ -1,33 +1,10 @@
+<!--suppress UnterminatedStatementJS -->
 <template lang="pug">
   .speaker-slider
-    hooper(:settings="hooperSettings")
-      slide
+    hooper(:settings="hooperSettings" ref="hooper" @slide="onFirstSlide")
+      slide(v-for="speaker in speakersToShow" :key="speaker")
         figure.speaker-slider__item
-          Picture(:img="'/image/aleksandr-mashkarev.png'")
-          figcaption Илья Балахнин
-      slide
-        figure.speaker-slider__item
-          Picture(:img="'/image/alexander-levitas.png'")
-          figcaption Илья Балахнин
-      slide
-        figure.speaker-slider__item
-          Picture(:img="'/image/alexey-molchanov.png'")
-          figcaption Илья Балахнин
-      slide
-        figure.speaker-slider__item
-          Picture(:img="'/image/alexey-panov.png'")
-          figcaption Илья Балахнин
-      slide
-        figure.speaker-slider__item
-          Picture(:img="'/image/anastasiya-gorkaya.png'")
-          figcaption Илья Балахнин
-      slide
-        figure.speaker-slider__item
-          Picture(:img="'/image/andrey-gavrikov.png'")
-          figcaption Илья Балахнин
-      slide
-        figure.speaker-slider__item
-          Picture(:img="'/image/andrey-karpov.png'")
+          Picture(:img="speaker")
           figcaption Илья Балахнин
       hooper-navigation(slot="hooper-addons")
 </template>
@@ -36,6 +13,7 @@
 import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
 import 'hooper/dist/hooper.css'
 import Picture from './Picture'
+// const Picture = () => import('./Picture')
 
 export default {
   components: {
@@ -43,6 +21,58 @@ export default {
     Hooper,
     Slide,
     HooperNavigation
+  },
+  data() {
+    return {
+      speakersData: [
+        'aleksandr-mashkarev.png',
+        'alexander-levitas.png',
+        'alexey-molchanov.png',
+        'alexey-panov.png',
+        'anastasiya-gorkaya.png',
+        'andrey-gavrikov.png',
+        'andrey-karpov.png',
+        'anton-petrochenkov.png',
+        'damir-halilov.png',
+        'denis-kabalkin.png',
+        'denis-kaplunov.png',
+        'dmitriy-kot.png',
+        'dmitriy-sevalnev.png',
+        'dmitriy-tkachenko.png',
+        'dmitry-johov.png',
+        'dmitry-katyshik.png',
+        'dmitry-naumovec.png',
+        'elena-kozlova.png',
+        'evgeniya-kobets.png',
+        'filipp-tsarevskiy.png',
+        'guzel-sharafutdinova.png',
+        'igor-mann.png',
+        'ilya-balahnin.png',
+        'ilyana-levina.png',
+        'irina-shamina.png',
+        'kirill_kunitskiy.png',
+        'konstantin-naychukov.png',
+        'kristina-lapitskaya.png',
+        'ruslan-baybekov.png',
+        'ruslan-osin.png',
+        'sergey-spivak.png',
+        'stas-polomar.png',
+        'svetlana-kovaleva.png',
+        'taras-levchik.png',
+        'timofey-kvachev.png',
+        'valeriya-smolina.png',
+        'valeriya-zhibrik.png',
+        'valeriy-domashenko.png',
+        'valeriy-krasko.png',
+        'viktor-komarov.png',
+        'viktor-sakson.png',
+        'vlad-titov.png',
+        'yan-stashkevich.png',
+        'yuliya-gerz.png'
+      ],
+      allSpeakersIsLoaded: false
+      // speakers: []
+    }
   },
   computed: {
     hooperSettings() {
@@ -62,8 +92,30 @@ export default {
           }
         }
       }
+    },
+    speakersToShow() {
+      return this.speakers.map((file) => '/image/speakers/' + file)
+    },
+    speakers() {
+      if (!this.allSpeakersIsLoaded) {
+        return this.speakersData.slice(0, 2)
+      }
+      return this.speakersData
+    }
+  },
+  methods: {
+    onFirstSlide() {
+      if (!this.allSpeakersIsLoaded) {
+        this.allSpeakersIsLoaded = true
+      }
+    },
+    updateState() {
+      this.allSpeakersIsLoaded = true
     }
   }
+  // created() {
+  //   this.speakers = this.speakersData.slice(0, 2)
+  // }
 }
 </script>
 
@@ -86,7 +138,7 @@ export default {
       width: auto
     & figcaption
       color: #9c9c9c
-      font-family: "Fira Sans"
+      font-family: "Fira Sans", sans-serif
       font-size: 18px
       font-weight: 400
       line-height: 16.03px

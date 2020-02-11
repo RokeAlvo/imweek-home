@@ -1,7 +1,3 @@
-// import * as ImageminWebpWebpackPlugin from 'imagemin-webp-webpack-plugin'
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
-
 export default {
   // mode: 'spa',
   mode: 'universal',

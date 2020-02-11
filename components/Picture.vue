@@ -2,15 +2,18 @@
   .picture
       picture()
           source(
+            v-if="currentOptions.webp375"
             :data-srcSet="webp375"
             media="(max-width: 500px)"
             type="image/webp"
           )
           source(
+            v-if="currentOptions.img375"
             :data-srcSet="img375"
             media="(max-width: 500px)"
           )
           source(
+            v-if="currentOptions.webp"
             :data-srcSet="webp"
             type="image/webp"
           )
@@ -20,7 +23,7 @@
           img(
             class="lazyload"
             :data-src="img"
-            :src="sqip"
+            :src="sqip ? sqip : img"
             )
 </template>
 
@@ -30,14 +33,18 @@ export default {
     img: {
       type: String,
       required: true
-    }
-  },
-  data() {
-    return {
-      im: '~/assets/image/aleksandr-mashkarev.png'
+    },
+    options: {
+      type: Object,
+      default() {
+        return { webp: true, webp375: true, img375: true }
+      }
     }
   },
   computed: {
+    currentOptions() {
+      return { webp: true, webp375: true, img375: true, ...this.options }
+    },
     fileName() {
       return this.img.substring(0, this.img.lastIndexOf('.'))
     },
@@ -61,12 +68,6 @@ export default {
 </script>
 
 <style scoped lang="sass">
-/*img[lazy='loading']*/
-/*  filter: blur(15px)*/
-picture
-  /*position: relative*/
-  /*max-width: 200px*/
-  /*width: 200px*/
 img
   max-width: 100%
   width: 100%

@@ -55,7 +55,7 @@ export default {
     background-color: $bg-accent
     color: $text-accent-color
     font-size: 23px
-    font-weight: 400
+    font-weight: 500
     text-transform: uppercase
     letter-spacing: 0.31px
     line-height: 29.38px
@@ -119,7 +119,6 @@ export default {
     font-size: 21px
     font-weight: 400
     text-transform: uppercase
-    /* Text style for "5" */
     em
       display: block
     em:nth-child(1)
