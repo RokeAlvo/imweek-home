@@ -20,7 +20,7 @@ export default {
     Picture,
     Hooper,
     Slide,
-    HooperNavigation
+    HooperNavigation,
   },
   data() {
     return {
@@ -68,9 +68,9 @@ export default {
         'viktor-sakson.png',
         'vlad-titov.png',
         'yan-stashkevich.png',
-        'yuliya-gerz.png'
+        'yuliya-gerz.png',
       ],
-      allSpeakersIsLoaded: false
+      allSpeakersIsLoaded: false,
       // speakers: []
     }
   },
@@ -84,13 +84,13 @@ export default {
         breakpoints: {
           800: {
             centerMode: false,
-            itemsToShow: 3
+            itemsToShow: 3,
           },
           1000: {
             itemsToShow: 6,
-            pagination: 'fraction'
-          }
-        }
+            pagination: 'fraction',
+          },
+        },
       }
     },
     speakersToShow() {
@@ -101,7 +101,7 @@ export default {
         return this.speakersData.slice(0, 2)
       }
       return this.speakersData
-    }
+    },
   },
   methods: {
     onFirstSlide() {
@@ -111,8 +111,8 @@ export default {
     },
     updateState() {
       this.allSpeakersIsLoaded = true
-    }
-  }
+    },
+  },
   // created() {
   //   this.speakers = this.speakersData.slice(0, 2)
   // }

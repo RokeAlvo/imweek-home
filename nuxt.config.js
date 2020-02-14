@@ -12,10 +12,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -30,24 +30,26 @@ export default {
    */
   plugins: [
     // '~/plugins/vue-lazy-load',
-    '~/plugins/vue-lazysizes.client.js'
+    '~/plugins/vue-lazysizes.client.js',
+    '~/plugins/vue-js-modal',
   ],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'vue-scrollto/nuxt',
     // '@bazzite/nuxt-optimized-images'
   ],
   styleResources: {
-    sass: ['./assets/css/main.sass']
+    sass: ['./assets/css/main.sass'],
   },
   // optimizedImages: {
   //   optimizedImages: {
@@ -93,20 +95,20 @@ export default {
    ** Build configuration
    */
   build: {
-    extend(config, { isDev, isClient, loaders: { vue } }) {
+    extend(config, { isClient, loaders: { vue } }) {
       if (isClient) {
         vue.transformAssetUrls.img = ['data-src', 'src']
         vue.transformAssetUrls.source = ['data-srcset', 'srcset']
       }
-    }
+    },
   },
   generate: {
-    extend(config, { isDev, isClient, loaders: { vue } }) {
+    extend(config, { isClient, loaders: { vue } }) {
       if (isClient) {
         vue.transformAssetUrls.img = ['data-src', 'src']
         vue.transformAssetUrls.source = ['data-srcset', 'srcset']
       }
-    }
-  }
+    },
+  },
   // }
 }

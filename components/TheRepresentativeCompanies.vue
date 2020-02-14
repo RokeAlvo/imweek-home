@@ -14,13 +14,13 @@
 import Picture from './Picture'
 export default {
   components: {
-    Picture
+    Picture,
   },
   computed: {
     imgOptions() {
       return { webp375: false, img375: false }
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -33,8 +33,8 @@ export default {
     Picture,
     TheHeader,
     Button,
-    TheSpeakerSlider
-  }
+    TheSpeakerSlider,
+  },
 }
 </script>
 

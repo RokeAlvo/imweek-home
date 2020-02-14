@@ -26,14 +26,14 @@ export default {
   mixins: [inViewport],
   data() {
     return {
-      visible: false
+      visible: false,
     }
   },
   watch: {
     'inViewport.now'(visible) {
       this.visible = visible
-    }
-  }
+    },
+  },
 }
 </script>
 

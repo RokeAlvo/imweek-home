@@ -19,8 +19,8 @@ export default {
   props: {
     value: {
       type: Number,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     days() {
@@ -31,16 +31,16 @@ export default {
         { day: 'Ср', date: '01.04' },
         { day: 'Чт', date: '02.04' },
         { day: 'Пт', date: '03.04' },
-        { day: 'Сб', date: '04.04' }
+        { day: 'Сб', date: '04.04' },
       ]
-    }
+    },
   },
   methods: {
     onClickDay(e) {
       this.$emit('input', e)
       // this.value = e
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -59,18 +59,22 @@ export default {
     display: flex
     flex-flow: column nowrap
     align-items: center
+    cursor: pointer
     &_active .pagination__tab
       /*width: 14px*/
       width: 0
       height: 0
       border: 10px solid transparent
       border-bottom: 10px solid $bg-accent
-
+    &_active .pagination__day
+      background: $bg-accent
+      color: $text-accent-color
   &__day
     max-width: 45px
     max-height: 45px
     width: 45px
     height: 45px
+    transition: 0.5s
   &__line
     width: 100%
     border: 2px solid $bg-accent

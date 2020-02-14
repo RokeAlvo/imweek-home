@@ -4,26 +4,30 @@
           source(
             v-if="currentOptions.webp375"
             :data-srcSet="webp375"
+            :srcset="webp375"
             media="(max-width: 500px)"
             type="image/webp"
           )
           source(
             v-if="currentOptions.img375"
             :data-srcSet="img375"
+            :srcSet="img375"
             media="(max-width: 500px)"
           )
           source(
             v-if="currentOptions.webp"
             :data-srcSet="webp"
+            :srcSet="webp"
             type="image/webp"
           )
           source(
             :data-srcSet="img"
+            :srcSet="img"
           )
           img(
-            class="lazyload"
+            :class="{lazyload: currentOptions.lazy}"
             :data-src="img"
-            :src="sqip ? sqip : img"
+            :src="imgSrc"
             )
 </template>
 
@@ -32,24 +36,40 @@ export default {
   props: {
     img: {
       type: String,
-      required: true
+      required: true,
     },
     options: {
       type: Object,
       default() {
-        return { webp: true, webp375: true, img375: true }
-      }
-    }
+        return {
+          webp: true,
+          webp375: true,
+          img375: true,
+          sqip: true,
+          lazy: true,
+        }
+      },
+    },
   },
   computed: {
     currentOptions() {
-      return { webp: true, webp375: true, img375: true, ...this.options }
+      return {
+        webp: true,
+        webp375: true,
+        img375: true,
+        sqip: true,
+        lazy: true,
+        ...this.options,
+      }
     },
     fileName() {
       return this.img.substring(0, this.img.lastIndexOf('.'))
     },
     ext() {
       return this.img.substring(this.img.lastIndexOf('.') + 1)
+    },
+    imgSrc() {
+      return this.currentOptions.sqip ? this.sqip : this.img
     },
     sqip() {
       return this.fileName + '.sqip.svg'
@@ -62,8 +82,8 @@ export default {
     },
     webp375() {
       return this.fileName + '.375.' + 'webp'
-    }
-  }
+    },
+  },
 }
 </script>
 

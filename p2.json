@@ -1,0 +1,505 @@
+[
+  {
+    "img": "igor-mann.png",
+    "name": "Игорь Манн",
+    "company": "Издательство «МИФ»",
+    "role": "Со-основатель",
+    "programName": "Главный вопрос бизнеса: Почему Вы?",
+    "time": "10.00 - 10.55",
+    "date": "1"
+  },
+  {
+    "img": "alexander-levitas.png",
+    "name": "Александр Левитас",
+    "company": "Levitas Consulting",
+    "role": "Руководитель",
+    "programName": "Основные принципы маркетинга без бюджета",
+    "time": "14.00 - 14.55",
+    "date": "1"
+  },
+  {
+    "img": "anton_petrochenkov.png",
+    "name": "Антон Петроченков",
+    "company": "Convert Monster",
+    "role": "Владелец",
+    "programName": "Комплексный системный маркетинг 2020: инструкция по применению",
+    "time": "11.00 - 11.55",
+    "date": "1"
+  },
+  {
+    "img": "kirill-kunitskiy.png",
+    "name": "Кирилл Куницкий",
+    "company": "Бизнес-Конструктор",
+    "role": "Основатель",
+    "programName": "Формула роста: как стабильно увеличивать продажи, не развалив бизнес",
+    "time": "15.00 - 15.55",
+    "date": "1"
+  },
+  {
+    "img": "denis-kaplunov.png",
+    "name": "Денис Каплунов",
+    "company": "Брендрайтер",
+    "programName": "ТЕКСТЫ И СМЫСЛЫ: Пишем не то, что хотим рассказать, а то, что хотят прочитать",
+    "time": "12.00 - 12.55",
+    "date": "1"
+  },
+  {
+    "img": "damir-halilov.png",
+    "name": "Дамир Халилов",
+    "company": "Green PR",
+    "role": "CEO Founder",
+    "programName": "Комплексная стратегия SMM продвижения",
+    "time": "16.00 - 16.55",
+    "date": "1"
+  },
+  {
+    "img": "ilya-balahnin.png",
+    "name": "Илья Балахнин",
+    "company": "Paper Planes",
+    "role": "Генеральный директор",
+    "programName": "6 рычагов роста компании в 2020 году",
+    "time": "13.00 - 13.55",
+    "date": "1"
+  },
+  {
+    "img": "andrey-gavrikov.png",
+    "name": "Андрей Гавриков",
+    "company": "Completo",
+    "role": "Ген. директор",
+    "programName": "Digital-инструментарий для повышения продаж",
+    "time": "17.00 - 17.55",
+    "date": "1"
+  },
+  {
+    "img": "kristina-lapitskaya.png",
+    "name": "Кристина Лапицкая",
+    "company": "Webmart School",
+    "role": "Руководитель",
+    "programName": "Агентский опыт: Что влияет на стоимость лида",
+    "time": "10.00 - 10.55",
+    "date": "2"
+  },
+  {
+    "img": "ruslan-osin.png",
+    "name": "Руслан Осин",
+    "company": "myTarget",
+    "role": "Рук-ль клиентского отдела",
+    "programName": "Чего ждать от performance-рекламы в 2020 году? Тренды и планы.",
+    "time": "14.00 - 14.55",
+    "date": "2"
+  },
+  {
+    "img": "taras-levchik.png",
+    "name": "Тарас Левчик",
+    "company": "Traffic Master",
+    "role": "Владелец",
+    "programName": "Как делать 10х в бизнесе с помощью трафика",
+    "time": "11.00 - 11.55",
+    "date": "2"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Привлечение трафика  и лидогенерация",
+    "time": "15.00 - 15.55",
+    "date": "2"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Привлечение трафика  и лидогенерация",
+    "time": "12.00 - 12.55",
+    "date": "2"
+  },
+  {
+    "img": "p1.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Контекстная и таргетированная реклама",
+    "time": "16.00 - 16.55",
+    "date": "2"
+  },
+  {
+    "img": "yuliya_lazareva.png",
+    "name": "Юлия Лазарева",
+    "company": "ВКонтакте",
+    "role": "Руководитель группы",
+    "programName": "Тема доклада: реклама ВКонтакте",
+    "time": "13.00 - 13.55",
+    "date": "2"
+  },
+  {
+    "img": "konstantin-naychukov.png",
+    "name": "Константин Найчуков",
+    "company": "eLama",
+    "role": "Евангелист",
+    "programName": "Продвинутая генерация рекламных кампаний в e-commerce",
+    "time": "17.00 - 17.55",
+    "date": "2"
+  },
+  {
+    "img": "vladimir-locmanov.png",
+    "name": "Владимир Лоцманов",
+    "company": "TargetHunter",
+    "role": "Продуктолог",
+    "programName": "SMM, который приносит деньги",
+    "time": "10.00 - 10.55",
+    "date": "3"
+  },
+  {
+    "img": "andrey_karpov.png",
+    "name": "Андрей Карпов",
+    "company": "Ok.ru",
+    "role": "Business development",
+    "programName": "Успешные SMM кейсы в ОК: как сделать, чтобы полюбили Ваш бренд",
+    "time": "14.00 - 14.55",
+    "date": "3"
+  },
+  {
+    "img": "vlad-titov.png",
+    "name": "Влад Титов",
+    "company": "Лаборатория комьюнити",
+    "role": "Основатель",
+    "programName": "Комьюнити-менеджмент: 5 этапов построения лояльного сообщества",
+    "time": "11.00 - 11.55",
+    "date": "3"
+  },
+  {
+    "img": "valeriya-smolina.png",
+    "name": "Валерия Смолина",
+    "company": "1PS",
+    "role": "Руководитель отдела SMM",
+    "programName": "Стоит ли игра свеч: серые и черные методы продвижения в Инстаграм",
+    "time": "15.00 - 15.55",
+    "date": "3"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Соц сети, блогинг и управление репутацией",
+    "time": "12.00 - 12.55",
+    "date": "3"
+  },
+  {
+    "img": "evgeniya-kobets.png",
+    "name": "Евгения Кобец",
+    "company": "YouScan",
+    "role": "Head of Local Marketing",
+    "programName": "Визуальные инсайты:выходим за рамки распознавания лого",
+    "time": "16.00 - 16.55",
+    "date": "3"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня:Соц сети, блогинг и управление репутацией",
+    "time": "13.00 - 13.55",
+    "date": "3"
+  },
+  {
+    "img": "yan-stashkevich.png",
+    "name": "Ян Сташкевич",
+    "company": "Ragoo Creative",
+    "role": "Основатель",
+    "programName": "Не бейте своего SMMщика, он тоже человек",
+    "time": "17.00 - 17.55",
+    "date": "3"
+  },
+  {
+    "img": "dmitriy-kot.png",
+    "name": "Дмитрий Кот",
+    "company": "Убедительный Маркетинг",
+    "role": "Директор",
+    "programName": "ТОП-3 схемы создания продающих текстов",
+    "time": "10.00 - 10.55",
+    "date": "4"
+  },
+  {
+    "img": "dmitriy-sevalnev.png",
+    "name": "Дмитрий Севальнев",
+    "company": "Пиксель Тулс",
+    "role": "Евангелист",
+    "programName": "5 точек кратного роста выручки Вашего бизнеса за счёт SEO",
+    "time": "14.00 - 14.55",
+    "date": "4"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема выступления:  создание сайтов",
+    "time": "11.00 - 11.55",
+    "date": "4"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема выступления: продвижение сайтов",
+    "time": "15.00 - 15.55",
+    "date": "4"
+  },
+  {
+    "img": "sergey-spivak.png",
+    "name": "Сергей Спивак",
+    "company": "RDC.center",
+    "role": "Директор",
+    "programName": "Продающий сайт с электронным магазином",
+    "time": "12.00 - 12.55",
+    "date": "4"
+  },
+  {
+    "img": "timofey-kvachev.png",
+    "name": "Тимофей Квачёв",
+    "company": "TRINET.Group",
+    "role": "Руководитель",
+    "programName": "Факапы 2020: Дорога к успеху иногда проходит через неудачи",
+    "time": "16.00 - 16.55",
+    "date": "4"
+  },
+  {
+    "img": "guzel-sharafutdinova.png",
+    "name": "Гузель Шарафутдинова",
+    "company": "Nethouse",
+    "role": "Веб-аналитик",
+    "programName": "Основные ошибки юзабилити различных типов сайтов",
+    "time": "13.00 - 13.55",
+    "date": "4"
+  },
+  {
+    "img": "stas-polomar.png",
+    "name": "Станислав Поломарь",
+    "company": "Seowork",
+    "role": "Руководитель",
+    "programName": "Интеграция SEO в развитие Вашего сайта",
+    "time": "17.00 - 17.55",
+    "date": "4"
+  },
+  {
+    "img": "dmitry-naumovec.png",
+    "name": "Дмитрий Наумовец",
+    "company": "Яндекс",
+    "role": "Рук-ль коммуникаций в соцсетях",
+    "programName": "Тема доклада уточняется",
+    "time": "10.00 - 10.55",
+    "date": "5"
+  },
+  {
+    "img": "viktor-sakson.png",
+    "name": "Виктор Саксон",
+    "company": "Rambler",
+    "role": "Зам. дир. по медиа",
+    "programName": "Маркетинг в медиа: точки роста",
+    "time": "14.00 - 14.55",
+    "date": "5"
+  },
+  {
+    "img": "p1.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Новые тренды и технологии маркетинга",
+    "time": "11.00 - 11.55",
+    "date": "5"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Новые тренды итехнологии маркетинга",
+    "time": "15.00 - 15.55",
+    "date": "5"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Новые тренды и технологии маркетинга",
+    "time": "12.00 - 12.55",
+    "date": "5"
+  },
+  {
+    "img": "viktor-komarov.png",
+    "name": "Виктор Комаров",
+    "company": "IntellectDialog",
+    "role": "CEO &amp; Founder",
+    "programName": "Автоматизация коммуникации с клиентами с помощью чат-ботов",
+    "time": "16.00 - 16.55",
+    "date": "5"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Новые тренды и технологии маркетинга",
+    "time": "13.00 - 13.55",
+    "date": "5"
+  },
+  {
+    "img": "p1.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня: Новые тренды и технологии маркетинга",
+    "time": "17.00 - 17.55",
+    "date": "5"
+  },
+  {
+    "img": "denis-kabalkin.png",
+    "name": "Денис Кабалкин",
+    "company": "LPgenerator &amp; Experrto",
+    "role": "CEO ",
+    "programName": "Онбординг клиентов: ключевые метрики",
+    "time": "10.00 - 10.55",
+    "date": "6"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня:Методы экономии бюджета  и увеличения конверсии",
+    "time": "14.00 - 14.55",
+    "date": "6"
+  },
+  {
+    "img": "ilyana-levina.png",
+    "name": "Ильяна Левина",
+    "company": "Скобеев и Партнеры",
+    "role": "CMO",
+    "programName": "50 инструментов, которые гарантированно повысят конверсию сайта",
+    "time": "11.00 - 11.55",
+    "date": "6"
+  },
+  {
+    "img": "dmitry-johov.png",
+    "name": "Дмитрий Жохов",
+    "company": "Click.ru",
+    "role": "Директор",
+    "programName": "Методы увеличения эффективности и экономии бюджета в контекстной рекламе",
+    "time": "15.00 - 15.55",
+    "date": "6"
+  },
+  {
+    "img": "aleksandr-mashkarev.png",
+    "name": "Александр Машкарёв",
+    "company": "Yagla",
+    "role": "Главный редактор",
+    "programName": "Как с микробюджетом обойти богатых конкурентов в контекстной рекламе",
+    "time": "12.00 - 12.55",
+    "date": "6"
+  },
+  {
+    "img": "ruslan-baybekov.png",
+    "name": "Руслан Байбеков",
+    "company": "PromoPult",
+    "role": "Евангелист",
+    "programName": "Как сэкономить на SEO-продвижении",
+    "time": "16.00 - 16.55",
+    "date": "6"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня:Методы экономии бюджета  и увеличения конверсии",
+    "time": "13.00 - 13.55",
+    "date": "6"
+  },
+  {
+    "img": "svetlana-kovaleva.png",
+    "name": "Светлана Ковалева",
+    "company": "R-брокер",
+    "role": "Евангелист",
+    "programName": "Заблуждения в рекламе и оценке эффективности, из-за которых вы теряете деньги",
+    "time": "17.00 - 17.55",
+    "date": "6"
+  },
+  {
+    "img": "dmitriy-tkachenko.png",
+    "name": "Дмитрий Ткаченко",
+    "company": "Тренер по продажам",
+    "programName": "7 грехов обработки лидов:как не слить клиентови рекламный бюджет",
+    "time": "10.00 - 10.55",
+    "date": "7"
+  },
+  {
+    "img": "mihail-hristosenko.png",
+    "name": "Михаил Христосенко",
+    "company": "I-Sales",
+    "role": "Основатель",
+    "programName": "Принципы больших продаж в социальных сетях",
+    "time": "14.00 - 14.55",
+    "date": "7"
+  },
+  {
+    "img": "valeriy-krasko.png",
+    "name": "Валерий Красько",
+    "company": "Netpeak",
+    "role": "CEO",
+    "programName": "Нет продаж? Нет клиентов? Давайте уволим маркетолога!",
+    "time": "11.00 - 11.55",
+    "date": "7"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня:Увеличение продаж и  работа с клиентской базой",
+    "time": "15.00 - 15.55",
+    "date": "7"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня:Увеличение продаж и  работа с клиентской базой",
+    "time": "12.00 - 12.55",
+    "date": "7"
+  },
+  {
+    "img": "yuliya-gerz.png",
+    "name": "Юлия Герц",
+    "company": "Callibri",
+    "role": "Евангелист",
+    "programName": "Эффективная коммуникация с клиентами в условиях мультиканальности",
+    "time": "16.00 - 16.55",
+    "date": "7"
+  },
+  {
+    "img": "official.jpg",
+    "name": "Имя Фамилия",
+    "company": "Компания",
+    "role": "Должность",
+    "programName": "Тема дня:Увеличение продаж и  работа с клиентской базой",
+    "time": "13.00 - 13.55",
+    "date": "7"
+  },
+  {
+    "img": "anastasiya-gorkaya.png",
+    "name": "Анастасия Горькая",
+    "company": "eSputnik",
+    "role": "Региональный директор",
+    "programName": "Сегментация в email-маркетинге и customer journey map",
+    "time": "17.00 - 17.55",
+    "date": "7"
+  }
+]
+

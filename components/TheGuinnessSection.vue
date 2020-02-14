@@ -4,7 +4,7 @@
       .the-guinness-section__wraper(v-if="visible")
         .the-guinness-section__logo
           Picture(img ="/image/guinness-logo.png" :options="{webp375: false, img375: false}")
-        p.the-guinness-section__promo
+        h4.header-on-dark.the-guinness-section__promo
           span Не упустите единственное в своем роде событие&nbsp;-
           span крупнейшую бесплатную маркетинговую конференцию в мире
         p.the-guinness-section__description Для установления нового рекорда Гиннесса нужны Вы и еще 14 999 онлайн-зрителей
@@ -20,14 +20,14 @@ export default {
   mixins: [inViewport],
   data() {
     return {
-      visible: false
+      visible: false,
     }
   },
   watch: {
     'inViewport.now'(visible) {
       this.visible = visible
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -46,16 +46,11 @@ export default {
     justify-content: center
     margin-bottom: 40px
   &__promo
-    font-weight: 700
     display: flex
     flex-flow: nowrap column
     align-items: center
-    text-align: center
     margin-bottom: 30px
     span:nth-child(1)
-      color: $text-accent-color
-      font-size: 30px
-      line-height: 35px
       margin-bottom: 0.5em
     span:nth-child(2)
       font-size: 20px

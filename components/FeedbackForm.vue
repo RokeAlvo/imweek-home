@@ -16,9 +16,9 @@ export default {
   props: {
     buttonText: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 
