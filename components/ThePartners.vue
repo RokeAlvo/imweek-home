@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.the-partners
+  section.the-partners#partners
     transition(name='fade')
       .the-partners__wraper(v-if="visible")
         h2.title.the-partners__title Генеральный партнер

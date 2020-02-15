@@ -10,7 +10,17 @@
   h3.first-screen__promo
     em Бесплатная&nbsp;
     | онлайн конференция
-  Button.button.button_big-font.first-screen__button
+  modal(
+    name="form-first-screen"
+    width="100%"
+    height="auto"
+    )
+    .first-screen__form
+      button.first-screen__form-button-close(type="button" @click="$modal.hide('form-first-screen')") ✖
+      h4.first-screen__form-title Быстрая регистрация
+      FeedbackForm(button-text="Принять участие").first-screen__form-inputs
+      p.first-screen__form-promo Гарантируем отсутствие спама и рекламы
+  Button.button.button_big-font.first-screen__button(type="button" @click="$modal.show('form-first-screen')")
     p Быстрая регистрация
     img.first-screen__arrow(:src="require('~/assets/image/arrow.png')")
   TheSpeakerSlider.first-screen__slider
@@ -26,10 +36,12 @@ import Picture from './Picture'
 import TheHeader from './TheHeader'
 import Button from './Button'
 import TheSpeakerSlider from './TheSpeakerSlider'
+import FeedbackForm from './FeedbackForm'
 
 export default {
   name: 'TheFirstScreen',
   components: {
+    FeedbackForm,
     Picture,
     TheHeader,
     Button,
@@ -82,6 +94,33 @@ export default {
     @media screen and (max-width: 370px)
       text-align: center
       margin-top: 40px
+  &__form
+    background-color: #323232
+    padding: 62px 52px
+    top: calc(50% - 325px / 2)
+  &__form-button-close
+    color: white
+    background: transparent
+    border: none
+    position: absolute
+    right: 24px
+    top: 24px
+    width: 24px
+    height: 24px
+    font-size: 24px
+  &__form-title
+    color: #ffffff
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 20px
+  &__form-inputs
+    margin-bottom: 20px
+  &__form-promo
+    color: #9c9c9c
+    font-size: 16px
+    font-weight: 400
+    text-align: center
   &__promo
     width: 100%
     margin: 40px 0 31px

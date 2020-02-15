@@ -1,6 +1,6 @@
 <!--suppress HtmlUnknownTarget -->
 <template lang="pug">
-  section.the-contacts
+  section.the-contacts#contacts
     transition(name='fade')
       .the-contacts__wraper(v-if="visible")
         img.the-contacts__logo(:src="require('~/assets/image/logo.png')")

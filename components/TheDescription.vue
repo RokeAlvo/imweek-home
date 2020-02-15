@@ -1,5 +1,5 @@
 <template lang="pug">
-.the-description
+.the-description(id="description")
   transition(name='fade')
     .the-description__wraper(v-if="visible")
       h2.title.the-description__title Вас ждет качественно новый формат онлайн мероприятий

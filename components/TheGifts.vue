@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.the-gifts
+  section.the-gifts(id="gifts")
     transition(name='fade')
       .the-gifts__wraper(v-if="visible")
         Picture(img ="/image/gifts.png" :options="{webp375: false, img375: false}").the-gifts__logo
