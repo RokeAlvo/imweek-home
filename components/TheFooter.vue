@@ -8,12 +8,13 @@
           nuxt-link(to="https://blog.imweek.ru/").nav__link Блог
           nuxt-link(to="https://blog.imweek.ru/webinars/").nav__link Вебинары
           nuxt-link(to="https://imweek.ru/partners.html").nav__link Спикерам, партнерам и СМИ
-        .the-footer__politics
-          nuxt-link(to="https://imweek.ru/documents/privacy-policy.pdf") Политика конфиденциальности
-        .the-footer__politics
-          nuxt-link(to="https://imweek.ru/documents/terms-conditions.pdf") Условия предоставления услуг
-          span &nbsp;и&nbsp;
-          nuxt-link(to="https://imweek.ru/documents/oferta.pdf") Оферта
+        .the-footer__politics-list
+          .the-footer__politics
+            nuxt-link(to="https://imweek.ru/documents/privacy-policy.pdf") Политика конфиденциальности
+          .the-footer__politics
+            nuxt-link(to="https://imweek.ru/documents/terms-conditions.pdf") Условия предоставления услуг
+            span &nbsp;и&nbsp;
+            nuxt-link(to="https://imweek.ru/documents/oferta.pdf") Оферта
 </template>
 
 <script>
@@ -44,12 +45,33 @@ export default {
   &__wraper
     width: 100%
     height: 100%
+    max-width: 1140px
+    margin: auto
     display: flex
     align-items: center
     flex-flow: column nowrap
+    @include respond-to(xl)
+      flex-flow: row-reverse
+      justify-content: space-between
   &__nav
     display: flex
     justify-content: center
+    max-width: 210px
+    @include respond-to(md)
+      width: 100%
+      max-width: 980px
+      justify-content: space-between
+    @include respond-to(xl)
+      width: 720px
+  &__politics-list
+    @include respond-to(md)
+      display: flex
+      justify-content: space-between
+      width: 100%
+    @include respond-to(xl)
+      width: auto
+      flex-flow: column
+      align-items: flex-start
   &__politics
     color: #474747
     font-size: 15px
@@ -65,7 +87,8 @@ export default {
   display: flex
   flex-flow: row wrap
   justify-content: space-around
-  max-width: 210px
+  @include respond-to(md)
+    justify-content: space-between
   &__link
     text-decoration: none
     cursor: pointer
