@@ -69,6 +69,16 @@ export default {
 <style scoped lang="sass">
 .modal-events
   position: relative
+  @include respond-to(md)
+    display: flex
+    flex-flow: row wrap
+    &__speaker-history
+      flex: 1
+    figure
+      max-width: 314px
+      margin-bottom: 0
+      min-width: 314px
+      min-height: 314px
   figure
     position: relative
     margin-bottom: 30px
@@ -104,10 +114,14 @@ export default {
     padding-left: 35px
   &__speaker-history
     margin-bottom: 1em
+    @include respond-to(md)
+      padding: 24px !important
+      margin: 0
   &__date-time
     font-size: 18px
     font-weight: 500
     margin-bottom: 1em
+    width: 100%
   &__time
     color: $bg-accent
   &__title
@@ -120,19 +134,30 @@ export default {
     font-size: 16px
     font-weight: 700
     margin-bottom: 1em
+    @include respond-to(md)
+      margin-top: auto
   &__form
     width: 100%
     max-width: 100%
     margin-bottom: 1em
+    @include respond-to(md)
+      display: flex
+      flex-flow: nowrap row
+      &::v-deep button
+        margin-left: 10px
 
 .text
   color: #333333
   font-size: 15px
   font-weight: 300
   line-height: 25px
+  @include respond-to(md)
+    font-size: 16px
 
 .text-padding
   padding: 0 24px
+  @include respond-to(md)
+    padding: 0 40px
 
 // style
 </style>

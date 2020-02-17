@@ -1,6 +1,13 @@
 <template lang="pug">
 .header
   img.header__logo(:src="require('~/assets/image/logo.png')")
+  nav.nav.header__nav
+    .nav__link(@click="onClick('Организаторы')") Организаторы
+    .nav__link(@click="onClick('Программа')") Программа
+    .nav__link(@click="onClick('Подарки')") Подарки
+    .nav__link(@click="onClick('Партнеры')") Партнеры
+    .nav__link(@click="onClick('Контакты')") Контакты
+
   <!--  todo попросить иконку svg-->
   <svg @click="$modal.show('nav-menu')" class="header__burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="19" viewBox="0 0 32 19"><g><g><image width="32" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAYAAADxlA/3AAAARklEQVRIS2P08vLS/fv37yWGAQKMow4YoJCHW8s46oDRECA3BNzd3f+TqxdZH9mJcNQB1Ah+kBlkR8GoA4ZPCIxWxwMdAgArHyKIizOEXgAAAABJRU5ErkJggg=="/></g></g></svg>
   modal(
@@ -56,6 +63,7 @@ export default {
 <style scoped lang="sass">
 .header
   width: 100%
+  max-width: 1482px
   height: 100px
   background: $bg-dark
   padding: 0 24px
@@ -65,6 +73,8 @@ export default {
   &__burger
     color: #7d7d7d
     cursor: pointer
+    @include respond-to(xl)
+      display: none
 .menu::v-deep
   .v--modal-box
     display: flex
@@ -97,4 +107,19 @@ export default {
     text-align: center
     color: #000000
     margin-top: 10px
+.nav
+  display: none
+  @include respond-to(xl)
+    display: flex
+    justify-content: space-between
+    &__link
+      cursor: pointer
+      color: #9c9c9c
+      font-size: 18px
+      font-weight: 400
+      line-height: 55px
+      letter-spacing: -0.18px
+      margin-left: 24px
+      &:hover
+        filter: opacity(0.3)
 </style>

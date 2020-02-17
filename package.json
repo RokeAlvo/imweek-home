@@ -15,12 +15,14 @@
     "@bazzite/nuxt-optimized-images": "^0.3.0",
     "hooper": "^0.3.4",
     "lazysizes": "^5.2.0",
+    "modernizr": "^3.9.0",
     "nuxt": "^2.0.0",
     "vue-in-viewport-mixin": "^2.0.0",
     "vue-js-modal": "^1.3.33",
     "vue-lazyload": "^1.3.3",
     "vue-media": "^1.1.1",
-    "vue-scrollto": "^2.17.1"
+    "vue-scrollto": "^2.17.1",
+    "webpack-modernizr-loader": "^5.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

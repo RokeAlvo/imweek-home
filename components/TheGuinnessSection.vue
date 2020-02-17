@@ -41,6 +41,9 @@ export default {
     flex-flow: column nowrap
     background: $bg-dark
     padding: 40px 24px
+    //noinspection CssUnknownTarget
+    @include respond-to(md)
+      background: #000 url('../assets/image/microphone.png')
   &__logo
     display: flex
     justify-content: center
@@ -54,14 +57,32 @@ export default {
       margin-bottom: 0.5em
     span:nth-child(2)
       font-size: 20px
-      line-height: 20px
+      line-height: 1
       color: $bg-accent
+      @include respond-to(md)
+        font-size: 30px
   &__description
     color: #848484
     font-size: 18px
     font-weight: 400
-    line-height: 20px
+    line-height: 1.1
     text-align: center
     padding: 0 24px
     margin-bottom: 30px
+    @include respond-to(md)
+      font-size: 24px
+  &__form
+    display: flex
+    max-width: 720px
+    width: 100%
+    flex-flow: column nowrap
+    @include respond-to(md)
+      flex-flow: row nowrap
+    &::v-deep
+      button
+        @include respond-to(md)
+          margin-left: 10px
+          max-width: 400px
+.webp .the-guinness-section__wraper
+  background: #000 url('../assets/image/microphone.webp')
 </style>

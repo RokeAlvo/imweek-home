@@ -55,6 +55,8 @@ export default {
     flex-flow: column nowrap
     background: $bg-dark
     padding: 40px 24px
+    @include respond-to(md)
+      background: url('../assets/image/gifts-bg.jpg')
   &__logo
     width: 94px
     height: 94px
@@ -65,9 +67,19 @@ export default {
     display: flex
     flex-flow: row wrap
     justify-content: space-around
+    max-width: 691px
+    @include respond-to(md)
+      width: 100%
+      justify-content: space-between
   &__form
     margin-bottom: 36px
     max-width: 100%
+    @include respond-to(md)
+      display: flex
+      flex-flow: row nowrap
+      width: 720px
+      &::v-deep button
+        margin-left: 10px
   &__description
     color: #848484
     font-size: 18px
@@ -91,5 +103,7 @@ export default {
     font-weight: 400
     line-height: 15px
     text-align: center
-// style
+.webp .the-gifts__wraper
+  @include respond-to(md)
+    background: url('../assets/image/gifts-bg.webp')
 </style>

@@ -24,7 +24,6 @@ export default {
 
 <style scoped lang="sass">
 .feedback-form
-  max-width: 288px
   &__email
     width: 100%
     height: 65px

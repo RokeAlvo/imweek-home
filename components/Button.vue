@@ -9,8 +9,8 @@ export default {}
 
 <style scoped lang="sass">
 .button
-  width: 271px
-  height: 65px
+  /*width: 271px*/
+  min-height: 65px
   justify-content: center
   align-items: center
   background-color: $bg-accent

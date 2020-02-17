@@ -13,18 +13,27 @@
   color: $text-secondary-color
   font-size: 30px
   font-weight: 700
-  line-height: 35px
+  line-height: 1.2
   text-align: center
+  @include respond-to(md)
+    //color: #141414;
+    font-size: 40px
 
 .fade-enter-active, .fade-leave-active
   transition: opacity 0.5s
 .fade-enter, .fade-leave-to
   opacity: 0
 
+.fade-in-enter-active
+  transition: opacity 0.5s
+.fade-in-enter, .fade-in-leave-to
+  opacity: 0
+
 .header-on-dark
   color: $text-accent-color
   font-size: 30px
-  line-height: 35px
+  line-height: 1.2
   font-weight: 700
   text-align: center
-
+  @include respond-to(md)
+    font-size: 40px
