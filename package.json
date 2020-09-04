@@ -41,7 +41,7 @@
     "selenium-webdriver": "^4.0.0-alpha.5",
     "vue-i18n": "^8.17.5",
     "vue-inputmask": "^0.2.1",
-    "vue-moment": "4.0.0",
+    "vue-moment": "4.1.0",
     "vue-popperjs": "^2.3.0",
     "vue2-datepicker": "3.4.1",
     "vue2-google-maps": "^0.10.7",
